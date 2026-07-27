@@ -1,6 +1,9 @@
+import DashboardLayout from "../layouts/DashboardLayout";
+
 const Dashboard = () => {
   return (
-    <div style={{ padding: "30px" }}>
+    <DashboardLayout>
+
       <h1>Dashboard</h1>
 
       <div
@@ -11,55 +14,48 @@ const Dashboard = () => {
           marginTop: "30px",
         }}
       >
-        <div
-          style={{
-            background: "#2563eb",
-            color: "#fff",
-            padding: "20px",
-            borderRadius: "10px",
-          }}
-        >
+
+        <div className="card">
           <h3>Total Students</h3>
           <h1>500</h1>
         </div>
 
-        <div
-          style={{
-            background: "#16a34a",
-            color: "#fff",
-            padding: "20px",
-            borderRadius: "10px",
-          }}
-        >
+        <div className="card">
           <h3>Attendance</h3>
           <h1>95%</h1>
         </div>
 
-        <div
-          style={{
-            background: "#ea580c",
-            color: "#fff",
-            padding: "20px",
-            borderRadius: "10px",
-          }}
-        >
+        <div className="card">
+          <h3>Faculty</h3>
+          <h1>42</h1>
+        </div>
+
+        <div className="card">
           <h3>Departments</h3>
           <h1>8</h1>
         </div>
 
-        <div
-          style={{
-            background: "#7c3aed",
-            color: "#fff",
-            padding: "20px",
-            borderRadius: "10px",
-          }}
-        >
-          <h3>Top Rank</h3>
-          <h1>Priya</h1>
-        </div>
       </div>
-    </div>
+
+      <style>{`
+      .card{
+          background:white;
+          padding:25px;
+          border-radius:10px;
+          box-shadow:0 0 8px rgba(0,0,0,.1);
+      }
+
+      .card h3{
+          color:#64748b;
+      }
+
+      .card h1{
+          margin-top:10px;
+          color:#2563eb;
+      }
+      `}</style>
+
+    </DashboardLayout>
   );
 };
 
