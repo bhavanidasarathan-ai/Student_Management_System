@@ -7,15 +7,7 @@ const DashboardLayout = ({ children }) => {
       <Navbar />
       <Sidebar />
 
-      <div
-        style={{
-          marginLeft: "240px",
-          marginTop: "80px",
-          padding: "25px",
-          background: "#f8fafc",
-          minHeight: "100vh",
-        }}
-      >
+    <div className="main-content">
         {children}
       </div>
     </>
