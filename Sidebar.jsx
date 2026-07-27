@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
-    <div
+    <div className="sidebar">
       style={{
         width: "230px",
         height: "100vh",
