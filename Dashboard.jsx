@@ -7,12 +7,7 @@ const Dashboard = () => {
       <h1>Dashboard</h1>
 
       <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(4,1fr)",
-          gap: "20px",
-          marginTop: "30px",
-        }}
+        className="dashboard-grid"className="dashboard-grid"
       >
 
         <div className="card">
